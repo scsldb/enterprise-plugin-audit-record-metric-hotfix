@@ -1,0 +1,13 @@
+name = "whitelist"
+kind = "Audit"
+description = "The IP Whitelist Plugin"
+version = "1"
+license = ""
+sysVars = []
+onInit = "OnInit"
+onFlush = "OnFlush"
+onShutdown = "OnShutdown"
+validate = "Validate"
+export = [
+    {extPoint="OnConnectionEvent", impl="OnConnectionEvent"}
+]

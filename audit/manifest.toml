@@ -1,0 +1,12 @@
+name = "audit"
+kind = "Audit"
+description = "The TiDB Enterprise Audit Plugin"
+version = "1"
+license = ""
+sysVars = []
+onInit = "OnInit"
+onFlush = "OnFlush"
+export = [
+    {extPoint="OnConnectionEvent", impl="OnConnectionEvent"},
+    {extPoint="OnGeneralEvent", impl="OnGeneralEvent"},
+]
